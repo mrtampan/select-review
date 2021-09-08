@@ -6,7 +6,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
 </head>
 <body>
-    <select class="selectpicker" width="500" name="states[]" id="slim-select" multiple="multiple">
+    <select class="selectpicker" width="500" name="states[]" id="slim-select" onchange="onchangedata" multiple="multiple">
 																					<option  value="8f14e45fceea167a5a36dedd4bea2543+1"> Purchase Order No : 23051 </option>
 																					<option  value="c9f0f895fb98ab9159f51fd0297e236d+1"> Purchase Order No : 23050 </option>
 																					<option  value="45c48cce2e2d7fbdea1afc51c7c6ad26+1"> Purchase Order No : 22258 </option>
@@ -5053,7 +5053,11 @@ var slimselect = new SlimSelect({
   select: '#slim-select'
 });
 	    
-	console.log(slimselect.selected());
+	function onchangedata(){
+	  console.log(slimselect.selected());
+	}
+	    
+
 
     </script>
 </body>
