@@ -11,7 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
 </head>
 <body>
-    <select class="js-example-basic-multiple" width="500" name="states[]" id="hey" multiple="multiple">
+    <select class="selectpicker" width="500" name="states[]" id="hey" multiple="multiple">
 																					<option  value="8f14e45fceea167a5a36dedd4bea2543+1"> Purchase Order No : 23051 </option>
 																					<option  value="c9f0f895fb98ab9159f51fd0297e236d+1"> Purchase Order No : 23050 </option>
 																					<option  value="45c48cce2e2d7fbdea1afc51c7c6ad26+1"> Purchase Order No : 22258 </option>
@@ -5056,7 +5056,7 @@
         
     var cuk = "";
 $(document).ready(function() {
-    $('.js-example-basic-multiple').selectpicker();
+    $('.selectpicker').selectpicker();
     
     $('#hey').change(function(){
        cuk = $('#hey').val();
