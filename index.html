@@ -5,7 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 <body>
-    <select class="js-example-basic-multiple" width="500" name="states[]" multiple="multiple">
+    <select class="js-example-basic-multiple" width="500" name="states[]" id="hey" multiple="multiple">
         <option value="AL">Alabama</option>
         <option value="WY">Wyoming</option>
         <option value="WY">Cookckas</option>
@@ -15,8 +15,15 @@
       </select>
 
     <script>
+        
+    var cuk = "";
 $(document).ready(function() {
     $('.js-example-basic-multiple').select2();
+    
+    $('#hey').change(function(){
+       cuk = $('#hey').val();
+       console.log(cuk);
+    });
 });
     </script>
 </body>
